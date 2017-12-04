@@ -60,9 +60,9 @@ This script sends out five tweets from the first five lines of an external .txt 
 - Make the bot send more or fewer tweets, or change which lines, by editing the numbers in **for line in tweettext[0:5]**. 
  - [0:5] means from the first thing up to (but not including) the fifth thing
  
-## Advanced bot: mashup_madlib.py
+## Advanced bot: plumpoem.py
 
-This script treats *The Red Wheelbarrow* as a mad-lib, filling in three blanks from two data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
+This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in four blanks from four data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
 
 ## Advanced bot: respondingbot.py
 
@@ -70,5 +70,5 @@ This script from Mark tweets a random line from a .txt file whenever @jasonchowb
 
 ## Advanced bot: mashup_markov
 
-This script uses a Markov chain to create new sentences from another text, and tweets them.
+This script (markovmaker.py) uses a Markov chain to create new sentences from another text (twain.txt is included), and tweets them.
 
