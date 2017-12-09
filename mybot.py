@@ -18,9 +18,9 @@ api = tweepy.API(auth)
 
 # What the bot will tweet
 
-tweetlist = ['Test tweet one!', 'Test tweet two!', 'Test tweet three!']
+tweet_list = ['Test tweet one!', 'Test tweet two!', 'Test tweet three!']
 
-for line in tweetlist: 
+for line in tweet_list: 
     api.update_status(line)
     print line
     print '...'

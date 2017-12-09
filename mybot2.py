@@ -22,10 +22,10 @@ api = tweepy.API(auth)
 # What the bot will tweet
 
 filename = open('twain.txt','r') 
-tweettext = filename.readlines() 
+tweet_text = filename.readlines() 
 filename.close()
 
-for line in tweettext[0:5]: #Will only write first 5 lines
+for line in tweet_text[0:5]: # Will only write first 5 lines
     api.update_status(line)
     print line
     time.sleep(15) # Sleep for 15 seconds
