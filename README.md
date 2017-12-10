@@ -66,9 +66,14 @@ This script treats the poem *This Is Just To Say* (William Carlos Williams) as a
 
 ## Advanced bot: respondingbot.py
 
-This script from Mark tweets a random line from a .txt file whenever @jasonchowbot tweets.
+This script tweets a random line from a .txt file whenever @ocertat tweets.
+
 
 ## Advanced bot: mashup_markov
 
 This script (markovmaker.py) uses a Markov chain to create new sentences from another text (twain.txt is included), and tweets them.
 
+
+## Advanced bot: imagebot.py
+
+This bot makes a call to an images API, downloads an image, then tweets it with a caption drawn from a .txt file.
