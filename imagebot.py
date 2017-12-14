@@ -7,11 +7,6 @@
 # It draws an image from an API and generates a random caption
 # from a text file.
 
-# Download a Project Gutenberg "Plain Text UTF-8" file,
-# open it in Notepad, remove junk at beginning,
-# and replace all double-linebreaks with single linebreaks.
-
-
 # Housekeeping: do not edit
 import tweepy
 import requests
@@ -31,7 +26,7 @@ def random_integer():
 
 # We're going to make a request to an images API!
 def image():
-    """ make an API call, fetch an image and  save it to file """
+    """ make an API call, fetch an image and save it to file """
 
     # There's a bunch of things that could possibly go wrong here,
     # so we're going to wrap the whole thing in at try block
@@ -70,6 +65,7 @@ def image():
         # if not, no big deal. We'll just move on
         else:
             print 'failed to download image. Passing.'
+            pass
     except Exception as e:
         print 'Something went wrong. Passing.'
         print e
