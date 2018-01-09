@@ -12,12 +12,13 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tweepy.API(auth)
 
+# gather some corpora from GitHub using requests
 fruit_response = requests.get('https://raw.githubusercontent.com/dariusk/corpora/master/data/foods/fruits.json')
 rooms_response = requests.get('https://raw.githubusercontent.com/dariusk/corpora/master/data/architecture/rooms.json')
 adjectives_response = requests.get('https://raw.githubusercontent.com/dariusk/corpora/master/data/words/adjs.json')
 colors_response = requests.get('https://raw.githubusercontent.com/dariusk/corpora/master/data/colors/crayola.json')
 
-# Create Python-readable lists of items in JSON files
+# Extract a Python-readable list from each response
 fruits = fruit_response.json()['fruits']
 rooms = rooms_response.json()['rooms']
 adjectives = adjectives_response.json()['adjs']

@@ -5,8 +5,9 @@
 
 # This bot tweets three times, waiting 15 seconds between tweets.
 
-# If you haven't changed credentials.py yet with your own Twitter
-# account settings, this script will tweet at twitter.com/lacunybot
+# If you haven't yet created credentials.py, modify credentials.template 
+# to include your own Twitter account settings. This script will then tweet
+# using your bot's account 
 
 # Housekeeping: do not edit
 import tweepy, time
@@ -17,9 +18,9 @@ api = tweepy.API(auth)
 
 
 # What the bot will tweet
-
 tweet_list = ['Test tweet one!', 'Test tweet two!', 'Test tweet three!']
 
+# loop through the tweet_list and tweet each item
 for line in tweet_list: 
     api.update_status(status=line)
     print(line)

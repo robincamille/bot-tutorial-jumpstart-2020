@@ -35,9 +35,12 @@ def line_number():
 
 
 # this is the function that does most of the work of the bot
-def run_time():
+def compare_tweets():
 
-    # uses the global lasttweet variable, rather than the local one
+    # uses the global lasttweet variable, rather than the local one.
+    # (it's probably best practice not to use a global variable for
+    # this purpose, but we've used this approach for its simplicity 
+    # and readability).
     global last_tweet
 
     # gets the most recent tweet by @ocertat and prints its id
@@ -54,9 +57,9 @@ def run_time():
     # updates lasttweet to the most recent tweet
     last_tweet = most_recent_tweet
 
-# runs the main function every 5 seconds
+# runs the compare_tweets function every 5 seconds
 while True:
-    run_time()
+    compare_tweets()
     print("sleeping")
     time.sleep(5)  # Sleep for 5 seconds
 

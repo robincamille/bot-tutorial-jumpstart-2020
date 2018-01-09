@@ -14,8 +14,7 @@
 
 
 # Housekeeping
-import markovgen, re, string
-
+import markovgen
 
 # Choose original file, new filename
 original = open('twain.txt')
@@ -30,11 +29,11 @@ counter = 0
 while counter < 10: # Change 10 to however many lines you want to generate
     line = '\n' + mk.generate_markov_text()
 
-    #remove punctuation
+    # remove punctuation
     exclude = ['"','(',')',';'] 
     line = ''.join(ch for ch in line if ch not in exclude)
 
-    #make line lowercase, add period at end
+    # make line lowercase, add period at end
     line = line.lower() + "." 
     
     print(line)
@@ -43,7 +42,7 @@ while counter < 10: # Change 10 to however many lines you want to generate
     
 
 for aline in newtext:
-    outfile.write(aline) #makes text file line by line
+    outfile.write(aline) # makes text file line by line
 
 
 # next steps if you want to tweet these lines:
