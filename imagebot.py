@@ -45,6 +45,7 @@ def image():
         # make the request! Include the parameters and the tricky
         # header we added!
         resp = requests.get(url, params=parameters, headers=headers)
+        print('Response status code: ' + str(resp.status_code))
 
         # We want the url for the image
         # So we'll get the json from the response
@@ -64,11 +65,10 @@ def image():
 
         # if not, no big deal. We'll just move on
         else:
-            print('failed to download image. Passing.')
+            print('Failed to download image. Passing.')
             pass
     except Exception as e:
-        print('Something went wrong. Passing.')
-        print(e)
+        print('Something went wrong. Passing: ' + str(e))
         pass
 
 

@@ -4,7 +4,7 @@
 # tweets one variant of This Is Just To Say by William Carlos Williams
 # original: https://www.poetryfoundation.org/poems/56159/this-is-just-to-say
 
-import json, io, time, requests
+import time, requests
 from random import randint
 from credentials import *
 import tweepy
