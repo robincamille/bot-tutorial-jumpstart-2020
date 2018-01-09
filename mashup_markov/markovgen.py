@@ -41,12 +41,12 @@ class Markov(object):
 				self.cache[key] = [w3]
 				
 	def generate_markov_text(self):
-                tweetsize = random.randint(4,20)
+		tweetsize = random.randint(4,20)
 		seed = random.randint(0, self.word_size-3)
 		seed_word, next_word = self.words[seed], self.words[seed+1]
 		w1, w2 = seed_word, next_word
 		gen_words = []
-		for i in xrange(tweetsize):
+		for i in range(tweetsize):
 			gen_words.append(w1)
 			w1, w2 = w2, random.choice(self.cache[(w1, w2)])
 		gen_words.append(w2)

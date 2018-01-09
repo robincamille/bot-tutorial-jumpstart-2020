@@ -42,14 +42,14 @@ def run_time():
 
     # gets the most recent tweet by @ocertat and prints its id
     most_recent_tweet = api.user_timeline('ocertat')[0]
-    print most_recent_tweet.id
+    print(most_recent_tweet.id)
 
     # compares the two tweets, and tweets a line of Twain
     # if there is a new tweet from @ocertat
     if most_recent_tweet != last_tweet:
         line = tweet_text[line_number()]
         api.update_status(status=line)
-        print line
+        print(line)
 
     # updates lasttweet to the most recent tweet
     last_tweet = most_recent_tweet
@@ -57,7 +57,7 @@ def run_time():
 # runs the main function every 5 seconds
 while True:
     run_time()
-    print "sleeping"
+    print("sleeping")
     time.sleep(5)  # Sleep for 5 seconds
 
 

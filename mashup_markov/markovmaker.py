@@ -37,7 +37,7 @@ while counter < 10: # Change 10 to however many lines you want to generate
     #make line lowercase, add period at end
     line = line.lower() + "." 
     
-    print line
+    print(line)
     newtext.append(line)
     counter = counter + 1
     
