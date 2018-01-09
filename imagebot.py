@@ -52,7 +52,7 @@ def image():
 
         # then we'll extract the bit we need (the url) and print it
         image_url = resp_json['data']['result']['items'][0]['media']
-        print image_url
+        print(image_url)
 
         # and make another request to get the image itself
         image_response = requests.get(image_url)
@@ -64,11 +64,11 @@ def image():
 
         # if not, no big deal. We'll just move on
         else:
-            print 'failed to download image. Passing.'
+            print('failed to download image. Passing.')
             pass
     except Exception as e:
-        print 'Something went wrong. Passing.'
-        print e
+        print('Something went wrong. Passing.')
+        print(e)
         pass
 
 
@@ -84,7 +84,7 @@ def caption():
     line = tweet_text[random_integer()]
     try:
         api.update_with_media('downloadedimage.jpg', status=line)
-        print line
+        print(line)
 
         # clean up after ourselves and delete the image file
         os.remove('downloadedimage.jpg')
@@ -92,7 +92,7 @@ def caption():
     # If there's no image, for example because the image() function failed,
     # we'll just move on.
     except Exception as e:
-        print e
+        print(e)
         pass
 
 
