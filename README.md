@@ -29,11 +29,11 @@ See the "Download ZIP" button toward the upper right? Click it and save the fold
 
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
 
-1. Right-click on mybot.py and select Edit with IDLE
+1. Go to the bot-tutorial-code4lib folder. Click on mybot.py to see the code.
 
 2. Take a look at the script; Robin and Mark will talk about what it's doing
 
-3. Select Run > Run Module from the window's menu bar
+3. Clicking Run will run the bot. A console will appear at the bottom of the screen with the output.
 
 *Change it up!*
 - In **tweetlist**, add new things for your bot to tweet. 
@@ -43,20 +43,20 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 
 This script sends out five tweets from the first five lines of an external .txt file.
 
-1. Right-click on mybot.py and select Edit with IDLE
+1. Go to the bot-tutorial-code4lib folder. Click on mybot2.py.
 
-2. Right-click on twain.txt and open it in Notepad
+2. Click on twain.txt to see the text
 
 3. Take a look at both files; Robin and Mark will talk about what the script is doing
 
-4. Select Run > Run Module from the window's menu bar for mybot2.py
+4. Select Run. 
 
 *Change it up!*
-- Go to http://gutenberg.org and choose a different text for your bot to tweet. 
- - Download the file as "plain text" into the tutorial folder and open it in Notepad
- - Remove junk at the beginning of the file
- - Replace double linebreaks with single linebreaks with a find/replace
- - In mybot2.py, replace twain.txt with the name of the new text file 
+ - Go to http://gutenberg.org and choose a different text for your bot to tweet. 
+ - Enter a file name and select New Empty File. Copy and paste your new text into this blank file. 
+ - Remove junk at the beginning (and the end) of the file. Save the file.
+ - Replace double linebreaks with single linebreaks. If your file is not too long you can do this manually. Or you can open a console and type: `awk 'NF' filename > newfilename`
+ - In mybot2.py, replace twain.txt with the name of the text file with no line breaks 
 - Make the bot send more or fewer tweets, or change which lines, by editing the numbers in **for line in tweettext[0:5]**. 
  - [0:5] means from the first thing up to (but not including) the fifth thing
  
