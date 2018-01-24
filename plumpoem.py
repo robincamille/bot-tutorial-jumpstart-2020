@@ -36,9 +36,23 @@ room_chosen = rooms[room_num].lower()
 color_chosen = colors[color_num]['color'].lower()
 adjective_chosen = adjectives[adjectives_num].lower()
 
-# Fill in the blanks of the poem
-poem = 'I have eaten\nthe %ss\nthat were in\nthe %s\n\nand which\nyou were probably\nsaving\nfor breakfast\n\nForgive me\nthey were delicious\nso %s\nand so %s' \
-       % (fruit_chosen, room_chosen, color_chosen, adjective_chosen)
+# Fill in the blanks of the poem with the randomly chosen items
+# \n means line break
+# \ at end of line just splits the line so code can be read more easily 
+
+poem = 'I have eaten\n\
+the {0}s \n\
+that were in\n\
+the {1} \n\n\
+and which\n\
+you were probably\n\
+saving\n\
+for breakfast\n\n\
+Forgive me\n\
+they were delicious\n\
+so {2} \n\
+and so {3}' \
+   .format(fruit_chosen, room_chosen, color_chosen, adjective_chosen)
 
 api.update_status(status=poem)
 print(poem)
