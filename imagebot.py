@@ -67,8 +67,8 @@ def image():
         else:
             print('Failed to download image. Passing.')
             pass
-    except Exception as e:
-        print('Something went wrong. Passing: ' + str(e))
+    except Exception:
+        print('Something went wrong. Passing.')
         pass
 
 

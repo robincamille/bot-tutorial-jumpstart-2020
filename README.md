@@ -60,7 +60,7 @@ This script sends out five tweets from the first five lines of an external .txt 
  - On PythonAnywhere, you can select `New Empty File`. This will only work if you've entered a filename. Copy and paste your gutenberg.org text into this blank file
  - Remove junk at the beginning (and the end) of the file. Save the file
  - Replace double linebreaks with single linebreaks. If your file is very short you can maybe do this manually. For longer files you can click on `Open bash console here` and type: `cd bot-tutorial-code4lib` then `grep . filename > newfilename`
- - In mybot2.py, replace `twain.txt` with the newfilename 
+ - In mybot2.py, replace `twain.txt` with the `newfilename` 
 - Make the bot send more or fewer tweets, or change which lines, by editing the numbers in **for line in tweettext[0:5]**. 
  - [0:5] means from the first thing up to (but not including) the fifth thing
  
