@@ -13,7 +13,7 @@ See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative
 1. Go to https://pythonanywhere.com and create an account by clicking on `Start running Python online in less than a minute`
  - Select `Create a beginner account` and fill out your details
  - Select `Account` on the top right
- - Select `Teacher` and enter `robincamille` or `b7jl` so that we can add the sample code to your account
+ - Select `Teacher` and enter `b7jl` so that we can add the sample code to your account
  - Or if you prefer to use git, you can `git clone https://github.com/robincamille/bot-tutorial-code4lib.git`
 
 ## Create a Twitter account for your bot
