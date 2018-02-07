@@ -39,8 +39,9 @@ def compare_tweets():
 
     # uses the global lasttweet variable, rather than the local one.
     # (it's probably best practice not to use a global variable for
-    # this purpose, but we've used this approach for its simplicity 
-    # and readability).
+    # this purpose, but we've shown this approach for its readability.
+    # We'll also show an alternate way to accomplish this without
+    # using a global variable).
     global last_tweet
 
     # gets the most recent tweet by @ocertat and prints its id
