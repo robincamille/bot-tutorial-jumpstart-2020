@@ -34,6 +34,8 @@ Not part of the in-person workshop? Download these files to your local machine o
 
 3. Copy Consumer Key/Secret and Access Key/Secret to **credentials.template** and save as a new file named **credentials.py**
 
+4. (Optional) Follow @bots4lib, which will follow & retweet bots made in this workshop
+
 ## Basic bot: mybot.py
 
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
