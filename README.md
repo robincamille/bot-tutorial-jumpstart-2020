@@ -36,15 +36,15 @@ Not part of the in-person workshop? Download these files to your local machine o
 
 3. Copy Consumer Key/Secret and Access Key/Secret to **credentials.template** and save as a new file named **credentials.py**
 
-4. (Optional) Follow @bots4lib, which will follow & retweet bots made in this workshop
+4. (Optional) Follow (account TBD), which will follow & retweet bots made in this workshop
 
-## Basic bot: mybot.py
+## Basic bot: listbot.py
 
 This script is a basic Twitter bot. It will tweet three things from a **list** inside the script.
 
-1. Go to the bot-tutorial-code4lib folder. Click on `mybot.py` to see the code
+1. Go to the bot-tutorial-jumpstart folder. Click on `listbot.py` to see the code
 
-2. Take a look at the script; Robin and Mark will talk about what it's doing
+2. Take a look at the script; Robin and Tori will talk about what it's doing
 
 3. Clicking `Run` will run the bot. A console will appear at the bottom of the screen with the output
 
@@ -52,15 +52,15 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 - In `tweetlist`, add new things for your bot to tweet
 - Increase/decrease time between tweets in `time.sleep(15)` (15 is the number of seconds) 
 
-## Intermediate bot: mybot2.py
+## Intermediate bot: textbot.py
 
 This script sends out five tweets from the first five lines of an external .txt file
 
-1. Go to the bot-tutorial-code4lib folder. Click on `mybot2.py`
+1. Go to the bot-tutorial-jumpstart folder. Click on `textbot.py`
 
 2. Also look at `twain.txt` to see the text
 
-3. Take a look at both files; Robin and Mark will talk about what the script is doing
+3. Take a look at both files; Robin and Tori will talk about what the script is doing
 
 4. Select `Run`
 
@@ -69,14 +69,14 @@ This script sends out five tweets from the first five lines of an external .txt 
    - On PythonAnywhere, you can select `New Empty File`. This will only work if you've entered a filename. Copy and paste your gutenberg.org text (or any text of your choosing) into this blank file
    - Remove junk at the beginning (and the end) of the file. Save the file
    - Replace double linebreaks with single linebreaks. If your file is very short you can maybe do this manually.
-   - For longer files you can click on `Open bash console here` and type: `cd bot-tutorial-code4lib` then `grep . filename > newfilename`. Open up the new file to make sure that it worked.
+   - For longer files you can click on `Open bash console here` and type: `cd bot-tutorial-jumpstart` then `grep . filename > newfilename`. Open up the new file to make sure that it worked.
    - If you're on a Windows machine, the grep command above might not work as expected, because Windows handles line endings differently than Mac or linux systems. If you're having this problem, replace the grep command above with `grep -v "^[[:space:]]*$" filename > newfilename`
-   - In mybot2.py, replace `twain.txt` with the `newfilename` 
+   - In textbot.py, replace `twain.txt` with the `newfilename` 
  - Make the bot send more or fewer tweets, or change which lines, by editing the numbers in `for line in tweettext[0:5]`. 
    - `[0:5]` means from the first thing up to (but not including) the fifth thing
  
  
-## Advanced bot: plumpoem.py
+## Advanced bot: poembot.py
 
 This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in four blanks from four data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
 
@@ -84,19 +84,3 @@ This script treats the poem *This Is Just To Say* (William Carlos Williams) as a
 - Choose different [word lists](https://github.com/dariusk/corpora). Make sure to change the URLs in lines ``16-19`` and the list name in lines ``22-25``.
 - Choose a different piece of text to make into a mad lib. 
 
-
-## Advanced bot: respondingbot.py
-
-This script tweets a random line from a .txt file whenever @ocertat tweets.
-
-
-## Advanced bot: mashup_markov
-
-This script (markovmaker.py) uses a Markov chain to create a new file full of nonsense sentences from another text (twain.txt is included).
-
-Use mybot2.py to tweet out lines from the new .txt file you created (note that the new filename is `mashup_markov/yourfilename.txt`).
-
-
-## Advanced bot: imagebot.py
-
-This bot makes a call to an images API, downloads an image, then tweets it with a caption drawn from a .txt file
