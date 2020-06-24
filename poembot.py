@@ -28,13 +28,13 @@ adjectives_num = randint(0, len(adjectives)-1)
 color_num = randint(0, len(colors)-1)
 
 # Choose random items from each list using random numbers
-fruit_chosen = fruits[fruit_num].lower() # should be pluralized here but pluralizing is hard
+fruit_chosen = fruits[fruit_num].lower()
 color_chosen = colors[color_num]['color'].lower()
 adjective_chosen = adjectives[adjectives_num].lower()
 
 # Fill in the blanks of the poem with the randomly chosen items
 # \n means line break
-# \ at end of line just splits the line so code can be read more easily 
+# \ at end of line just splits the line in the code, so that the code can be read more easily 
 
 poem = 'This is just to say\n\n\
 I have eaten\n\
@@ -57,7 +57,7 @@ print(poem)
 ## SAMPLE OUTPUT
 
 ## I have eaten
-## the apricots
+## the kumquats
 ## that were in
 ## the icebox
 ##
@@ -68,5 +68,5 @@ print(poem)
 ##
 ## Forgive me
 ## they were delicious
-## so black
-## and so hopeless
+## so unmellow yellow
+## and so waterproof
