@@ -17,11 +17,11 @@ If you're participating in this in-person workshop:
 1. Go to https://pythonanywhere.com and create an account by clicking on `Start running Python online in less than a minute`
  - Select `Create a beginner account` and fill out your details
  - Select `Account` on the top right
- - Select `Teacher` and enter `b7jl` so that we can add the sample code to your account
+ - Select `Teacher` and enter `(coming soon)` so that we can add the sample code to your account
 
-Bots left running on PythonAnywhere will keep running for a day or so (if the script you're using, like `mybot2.py`, is programmed to keep iterating through tweets) even if you close PythonAnywhere.
+Bots left running on PythonAnywhere will keep running for a day or so (if the script you're using, like `listbot.py`, is programmed to keep iterating through tweets) even if you close PythonAnywhere.
 
-Not part of the in-person workshop? Download these files to your local machine or use this command: `git clone https://github.com/robincamille/bot-tutorial-code4lib.git`
+Not part of the in-person workshop? Download these files to your local machine or use this command: `git clone https://github.com/robincamille/bot-tutorial-jumpstart.git`
 
 ## Create a Twitter account for your bot
 
