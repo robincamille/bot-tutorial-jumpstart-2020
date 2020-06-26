@@ -78,7 +78,7 @@ This script sends out five tweets from the first five lines of an external .txt 
  
 ## Advanced bot: poembot.py
 
-This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in four blanks from four data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
+This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in 3 blanks from 3 data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
 
 *Change it up!*
 - Choose different [word lists](https://github.com/dariusk/corpora). Make sure to change the URLs in lines ``16-19`` and the list name in lines ``22-25``.
