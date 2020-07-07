@@ -25,7 +25,7 @@ for line in tweet_list:
     api.update_status(status=line)
     print(line)
     print('...')
-    time.sleep(15) # Sleep for 15 seconds
+    time.sleep(5) # Sleep for 15 seconds
 
 print("All done!")
 
