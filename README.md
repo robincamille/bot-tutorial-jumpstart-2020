@@ -10,33 +10,39 @@ Written in Python 3.
 
 **Required libraries:** tweepy 3.5, requests, time, os, random
 
-## Create an account on PythonAnywhere
+## Installation Specifications
 
-If you're participating in this in-person workshop:
+For this workshop, you will need to follow the Jumpstart Program install fest instructions to set up Anaconda (which will install python for you and the required libraries listed above), VSCode, and a Twitter developer account.
 
-1. Go to https://pythonanywhere.com and create an account by clicking on `Start running Python online in less than a minute`
- - Select `Create a beginner account` and fill out your details
- - Select `Account` on the top right
- - Select `Teacher` and enter `(coming soon)` so that we can add the sample code to your account
+## Get credentials from your Twitter account 
 
-Bots left running on PythonAnywhere will keep running for a day or so (if the script you're using, like `listbot.py`, is programmed to keep iterating through tweets) even if you close PythonAnywhere.
-
-Not part of the in-person workshop? Download these files to your local machine or use this command: `git clone https://github.com/robincamille/bot-tutorial-jumpstart.git`
-
-## Create a Twitter account for your bot
-
-1. Go to http://twitter.com and sign up for a new account of your choosing
- - Be sure to include your mobile number (required for using the API) 
- - Email address must be unique to Twitter users; try adding random periods in your Gmail address, if you have one
-
-2. Go to http://apps.twitter.com and create a new app
+1. Go to http://apps.twitter.com and create a new app
  - This info isn't public so it can be messy 
  - Go to `Keys and Access Tokens`
  - `Create my access token`
 
-3. Copy Consumer Key/Secret and Access Key/Secret to **credentials.template** and save as a new file named **credentials.py**
+2. Copy Consumer Key/Secret and Access Key/Secret to **credentials.template** and save as a new file named **credentials.py**
 
-4. (Optional) Follow (account TBD), which will follow & retweet bots made in this workshop
+3. (Optional) Follow (account TBD), which will follow & retweet bots made in this workshop
+
+## Running Code
+
+Once you have your environment set up, you can fork this repository to get started and then clone it to your local machine. 
+
+1. Fork this repository by clicking the button labeled 'fork' in the top right corner of this window. 
+
+2. Clone the repository to your local machine.
+- Copy the repository url from your browser. 
+- In your terminal [mac] or command line [windows], navigate to the repository where you  want this repository to live (your Desktop, for example), and then run the following command to clone the repository to that location: `git clone [repository url]`
+
+3. Navigate into that repository with the command `cd bot-tutorial-jumpstart`
+
+To test things out and get familiar with how we will be running code throughout the workshop, follow these steps:
+
+1. Using your finder or search box, find the folder on your desktop. Open the folder and open the file test.py in VS Code.
+2. To run the code, click the green triangle in the upper right corner of the VS Code window.  (*link to marked up screenshot*) 
+
+You should see “Hello, there!” printed in the Terminal part of this window (the lower half).  (*link to marked up screenshot*)  
 
 ## Basic bot: listbot.py
 
