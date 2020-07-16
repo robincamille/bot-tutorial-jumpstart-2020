@@ -2,28 +2,26 @@
 
 *See original repo: https://github.com/robincamille/bot-tutorial*
 
-This tutorial and its updated materials were originally put together by Robin Davis (@robincamille) and Mark Eaton (github.com/MarkEEaton) for a pre-conference workshop at [Code4Lib 2018](http://2018.code4lib.org/).
+Let's make a bot!! These instructions are written for participants in the Jumpstart Program.
 
-See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative Code Examples](http://jitp.commons.gc.cuny.edu/make-a-twitter-bot-in-python-iterative-code-examples/). *Journal of Interactive Technology and Pedagogy* (Blueprints section).  April 2016. (Verbose write-up featuring [code from a previous version](https://github.com/robincamille/bot-tutorial) of this workshop.)
+**Required libraries:** tweepy 3.5, requests, time, os, random. Written in Python 3. 
 
-Written in Python 3.
-
-**Required libraries:** tweepy 3.5, requests, time, os, random
+---
 
 ## Installation Specifications
 
-For this workshop, you will need to follow the Jumpstart Program install fest instructions to set up Anaconda (which will install python for you and the required libraries listed above), VSCode, and a Twitter developer account.
+For this workshop, you will need to follow the Jumpstart Program install-fest instructions to set up Anaconda (which will install Python for you and the required libraries listed above), VSCode, and a Twitter developer account.
 
 ## Get credentials from your Twitter account 
 
 1. Go to http://apps.twitter.com and create a new app
- - This info isn't public so it can be messy 
+ - This info isn't public so your app name/descrition can be messy 
  - Go to `Keys and Access Tokens`
  - `Create my access token`
 
-2. Copy Consumer Key/Secret and Access Key/Secret to **credentials.template** and save as a new file named **credentials.py**
+2. Copy Consumer Key/Secret and Access Key/Secret to **credentials.template** 
 
-3. (Optional) Follow (account TBD), which will follow & retweet bots made in this workshop
+3. Save that file as a new file named **credentials.py**
 
 ## Running Code
 
@@ -113,3 +111,9 @@ No message of success? Ask a workshop facilitator what's going on.
 ---
 
 Questions about these instructions? Contact Robin at rcdavis6@ncsu.edu.
+
+---
+
+This tutorial and its updated materials were originally put together by Robin Davis (@robincamille) and Mark Eaton (github.com/MarkEEaton) for a pre-conference workshop at [Code4Lib 2018](http://2018.code4lib.org/).
+
+See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative Code Examples](http://jitp.commons.gc.cuny.edu/make-a-twitter-bot-in-python-iterative-code-examples/). *Journal of Interactive Technology and Pedagogy* (Blueprints section).  April 2016. (Verbose write-up featuring [code from a previous version](https://github.com/robincamille/bot-tutorial) of this workshop.)
