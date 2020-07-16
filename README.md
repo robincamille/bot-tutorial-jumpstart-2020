@@ -40,9 +40,10 @@ Once you have your environment set up, you can fork this repository to get start
 To test things out and get familiar with how we will be running code throughout the workshop, follow these steps:
 
 1. Using your finder or search box, find the folder on your desktop. Open the folder and open the file test.py in VS Code.
-2. To run the code, click the green triangle in the upper right corner of the VS Code window.  (*link to marked up screenshot*) 
+2. To run the code, click the green triangle in the upper right corner of the VS Code window. 
+3. Look for “Hello, there!” printed in the Terminal part of this window (the lower half). 
 
-You should see “Hello, there!” printed in the Terminal part of this window (the lower half).  (*link to marked up screenshot*)  
+[View an annotated screenshot of how to edit and run Python code in VS Code](http://robincamille.com/ncsu/vscode_screenshot_python.png)
 
 ## Basic bot: listbot.py
 
@@ -90,3 +91,25 @@ This script treats the poem *This Is Just To Say* (William Carlos Williams) as a
 - Choose different [word lists](https://github.com/dariusk/corpora). Make sure to change the URLs in lines ``16-19`` and the list name in lines ``22-25``.
 - Choose a different piece of text to make into a mad lib. 
 
+## Commit your changes with Git 
+
+You've made changes to these scripts since you first forked them. Now you'll practice *committing* those changes so you have a record of your versions. 
+
+1. In the Terminal window of VS Code, type `git status` and hit the return (enter) key to see the files you've changed.
+1. Then type `git add listbot.py` (or another filename) and hit return
+1. (Optional) Type `git status` and hit return again to check what that did
+1. Type `git commit -m "Changed what the bot tweets"` (or another way to describe your change) and hit return
+
+[View an annotated screenshot of how to use Git in VS Code](http://robincamille.com/ncsu/vscode_screenshot_git.png)
+
+### Push your changes with Git 
+
+At some point, you'll want the changes you've committed on your machine to appear on your GitHub repository. 
+
+1. In the Terminal window again, type `git push origin master` and hit the return key. You should see a message of success.
+
+No message of success? Ask a workshop facilitator what's going on. 
+
+---
+
+Questions about these instructions? Contact Robin at rcdavis6@ncsu.edu.
