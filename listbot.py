@@ -18,14 +18,14 @@ api = tweepy.API(auth)
 
 
 # What the bot will tweet
-tweet_list = ['Test tweet one!', 'Test tweet two!', 'Test tweet three!']
+tweet_list = ['Giraffes?', 'Giraffes!', 'Giraffes!!!!!']
 
 # loop through the tweet_list and tweet each item
 for line in tweet_list: 
     api.update_status(status=line)
     print(line)
     print('...')
-    time.sleep(15) # Sleep for 15 seconds
+    time.sleep(0) # Sleep for 15 seconds
 
 print("All done!")
 
