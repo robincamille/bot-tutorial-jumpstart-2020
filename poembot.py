@@ -1,14 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# tweets one variant of This Is Just To Say by William Carlos Williams
-# original: https://poets.org/poem/just-say
+# Twitter Bot Starter Kit: Bot 3
+
+# This bot generates one variant of a poem using a mad-libs
+# technique, replacing 3 words in the original with 3
+# randomly-chosen words from 3 word lists.
+
+# Original poem: This Is Just To Say by William Carlos Williams
+# https://poets.org/poem/just-say
 
 import requests
 from random import randint
 from credentials import *
 import tweepy
-auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth = tweepy.OAuthHandler(API_KEY, API_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 api = tweepy.API(auth)
 
@@ -23,17 +29,19 @@ adjectives = adjectives_response.json()['adjs']
 colors = colors_response.json()['colors']
     
 # Pick random numbers
-fruit_num = randint(0, len(fruits)-1)
+# randint(0, len(xxx)-1) means choose random number between 0 and the length of the 
+# word list named xxx 
+fruit_num = randint(0, len(fruits)-1) 
 adjectives_num = randint(0, len(adjectives)-1)
 color_num = randint(0, len(colors)-1)
 
-# Choose random items from each list using random numbers
+# Choose random items from each list using those random numbers
 fruit_chosen = fruits[fruit_num].lower()
 color_chosen = colors[color_num]['color'].lower()
 adjective_chosen = adjectives[adjectives_num].lower()
 
 # Fill in the blanks of the poem with the randomly chosen items
-# \n means line break
+# \n means insert a line break
 # \ at end of line just splits the line in the code, so that the code can be read more easily 
 
 poem = 'This is just to say\n\n\

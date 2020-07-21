@@ -1,7 +1,5 @@
 # Twitter bot tutorial: Jumpstart Program 2020 edition
 
-*See original repo: https://github.com/robincamille/bot-tutorial*
-
 Let's make a bot!! These instructions are written for participants in the Jumpstart Program.
 
 **Required libraries:** tweepy 3.5, requests, time, os, random. Written in Python 3. 
@@ -12,20 +10,8 @@ Let's make a bot!! These instructions are written for participants in the Jumpst
 
 For this workshop, you will need to follow the Jumpstart Program install-fest instructions to set up Anaconda (which will install Python for you and the required libraries listed above), VSCode, and a Twitter developer account.
 
-## Get credentials from your Twitter account 
-
-1. Go to http://apps.twitter.com and create a new app
- - This info isn't public so your app name/descrition can be messy 
- - Go to `Keys and Access Tokens`
- - `Create my access token`
-
-2. Copy Consumer Key/Secret and Access Key/Secret to **credentials.template** 
-
-3. Save that file as a new file named **credentials.py**
-
-## Running Code
-
-Once you have your environment set up, you can fork this repository to get started and then clone it to your local machine. 
+## Fork this repository
+Get this code onto your local machine. 
 
 1. Fork this repository by clicking the button labeled 'fork' in the top right corner of this window. 
 
@@ -35,13 +21,29 @@ Once you have your environment set up, you can fork this repository to get start
 
 3. Navigate into that repository with the command `cd bot-tutorial-jumpstart`
 
+## Running Code in VS Code: test.py (optional)
+
 To test things out and get familiar with how we will be running code throughout the workshop, follow these steps:
 
-1. Using your finder or search box, find the folder on your desktop. Open the folder and open the file test.py in VS Code.
+1. Using your finder or search box, find the folder on your desktop. Open the folder and open the file test.py in Visual Studio Code.
 2. To run the code, click the green triangle in the upper right corner of the VS Code window. 
 3. Look for “Hello, there!” printed in the Terminal part of this window (the lower half). 
 
 [View an annotated screenshot of how to edit and run Python code in VS Code](http://robincamille.com/ncsu/vscode_screenshot_python.png)
+
+## Get credentials from your Twitter account 
+Give your Twitter script the passwords it needs to send tweets via code instead of using the Twitter website.
+
+1. Go to https://developer.twitter.com/en/apps/ and create an app
+ - This info isn't public so your app name/description can be messy 
+ - Find the app's `Keys and Access Tokens`
+ - (Re)generate "Consumer API keys" and "Access token & access token secret"
+
+2. Copy Consumer API Key/Secret and Access Token/Secret to **credentials.template** 
+
+3. Save that file as a new file named **credentials.py**
+
+(Why save with a new filename? Later on, you'll commit and push the changes you make to these files using Git, and those changes will be publicly viewable on your GitHub account. But you don't want to share your bot account's credentials/passwords. The file called .gitignore has credentials.py listed as a file to ignore, so Git will never even see it, and it won't get sent to your GitHub account.)
 
 ## Basic bot: listbot.py
 
@@ -51,10 +53,10 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 
 2. Take a look at the script; Robin and Tori will talk about what it's doing
 
-3. Clicking `Run` will run the bot. A console will appear at the bottom of the screen with the output
+3. Clicking the green "run" triangle will run the bot. A Terminal will appear at the bottom of the screen with the output
 
 *Change it up!*
-- In `tweetlist`, add new things for your bot to tweet
+- In `tweet_list`, add new things for your bot to tweet
 - Increase/decrease time between tweets in `time.sleep(15)` (15 is the number of seconds) 
 
 ## Intermediate bot: textbot.py
@@ -77,12 +79,12 @@ This script sends out five tweets from the first five lines of an external .txt 
   - Replace double linebreaks with single linebreaks. If your file is very short you can maybe do this manually. If the file is very long, you can use advanced find/replace
   - In textbot.py, replace `twain.txt` with the `newfilename.txt`, then go to town
 - Make the bot send more or fewer tweets, or change which lines, by editing the numbers in `for line in tweettext[0:5]`. 
-   - `[0:5]` means from the first thing up to (but not including) the fifth thing
+   - `[0:5]` means from the first thing up to (but not including) the #5 thing. Programming languages consider 0 to be the first number, so what we'd call "line one" is actually "line zero" to the computer, and "line six" to humans is "line five" to the computer.
  
  
 ## Advanced bot: poembot.py
 
-This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in 3 blanks from 3 data sources: JSON files from @dariusk's [collection of corpora](https://github.com/dariusk/corpora). 
+This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in 3 blanks from 3 data sources: JSON files from @dariusk's [collection of corpora and word lists](https://github.com/dariusk/corpora). 
 
 *Change it up!*
 - Choose different [word lists](https://github.com/dariusk/corpora). Make sure to change the URLs in lines ``16-19`` and the list name in lines ``22-25``.
@@ -90,7 +92,7 @@ This script treats the poem *This Is Just To Say* (William Carlos Williams) as a
 
 ## Commit your changes with Git 
 
-You've made changes to these scripts since you first forked them. Now you'll practice *committing* those changes so you have a record of your versions. 
+You've made changes to these scripts since you first forked them. Now you'll practice *committing* and *pushing* those changes so you have a record of your versions.
 
 1. In the Terminal window of VS Code, type `git status` and hit the return (enter) key to see the files you've changed.
 1. Then type `git add listbot.py` (or another filename) and hit return
@@ -114,5 +116,7 @@ Questions about these instructions? Contact Robin at rcdavis6@ncsu.edu.
 ---
 
 This tutorial and its updated materials were originally put together by Robin Davis (@robincamille) and Mark Eaton (github.com/MarkEEaton) for a pre-conference workshop at [Code4Lib 2018](http://2018.code4lib.org/).
+
+*See original repo: https://github.com/robincamille/bot-tutorial*
 
 See also: Davis, Robin, and Mark Eaton. [Make a Twitter Bot in Python: Iterative Code Examples](http://jitp.commons.gc.cuny.edu/make-a-twitter-bot-in-python-iterative-code-examples/). *Journal of Interactive Technology and Pedagogy* (Blueprints section).  April 2016. (Verbose write-up featuring [code from a previous version](https://github.com/robincamille/bot-tutorial) of this workshop.)
