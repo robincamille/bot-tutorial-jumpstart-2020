@@ -34,16 +34,18 @@ To test things out and get familiar with how we will be running code throughout 
 ## Get credentials from your Twitter account 
 Give your Twitter script the passwords it needs to send tweets via code instead of using the Twitter website.
 
-1. Go to https://developer.twitter.com/en/apps/ and create an app
- - This info isn't public so your app name/description can be messy 
- - Find the app's `Keys and Access Tokens`
- - (Re)generate "Consumer API keys" and "Access token & access token secret"
+1. Go to https://developer.twitter.com/en/portal/apps/new and name your new app. (If you get an  error message when you click the "Complete" button, try going to the old [sign-up form](https://developer.twitter.com/en/apps/create) instead)
+ - This name isn't public; call it something like JumpstartBots 
+ 
+1. On the app's `Settings` page, scroll down to App Permissions and edit it, changing it from "Read only" to "Read & Write"
+
+1. Find the app's `Keys and Tokens` page (the tab next to the app's Settings)
+ - (Re)generate "Consumer API key & secret" and "Access token & secret"
 
 2. Copy Consumer API Key/Secret and Access Token/Secret to **credentials.template** 
 
 3. Save that file as a new file named **credentials.py**
-
-(Why save with a new filename? Later on, you'll commit and push the changes you make to these files using Git, and those changes will be publicly viewable on your GitHub account. But you don't want to share your bot account's credentials/passwords. The file called .gitignore has credentials.py listed as a file to ignore, so Git will never even see it, and it won't get sent to your GitHub account.)
+- (Why save with a new filename? Later on, you'll commit and push the changes you make to these files using Git, and those changes will be publicly viewable on your GitHub account. But you don't want to share your bot account's credentials/passwords. The file called .gitignore has credentials.py listed as a file to ignore, so Git will never even see it, and it won't get sent to your GitHub account.)
 
 ## Basic bot: listbot.py
 
