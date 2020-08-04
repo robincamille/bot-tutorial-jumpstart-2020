@@ -13,11 +13,12 @@ For this workshop, you will need to follow the Jumpstart Program install-fest in
 ## Fork this repository
 Get this code onto your local machine. 
 
-1. Fork this repository by clicking the button labeled 'fork' in the top right corner of this window. 
+1. Fork this repository by clicking the button labeled 'fork' in the top right corner of this window. This will add this repository to your own GitHub account. 
 
 2. Clone the repository to your local machine.
-- Copy the repository url from your browser. 
-- In your terminal [mac] or command line [windows], navigate to the repository where you  want this repository to live (your Desktop, for example), and then run the following command to clone the repository to that location: `git clone [repository url]`
+- Go to the repository in your account: github.com/(your account name)/bot-tutorial-jumpstart
+- Select the green "Code" button and copy the URL there, which should end in .git
+- In your terminal [mac] or command line [windows], navigate to the folder where you  want this repository to live (your Desktop, for example), and then run the following command to clone the repository to that location: `git clone [repository url ending in .git]`
 
 3. Navigate into that repository with the command `cd bot-tutorial-jumpstart`
 
