@@ -90,7 +90,7 @@ This script sends out five tweets from the first five lines of an external .txt 
 This script treats the poem *This Is Just To Say* (William Carlos Williams) as a mad-lib, filling in 3 blanks from 3 data sources: JSON files from @dariusk's [collection of corpora and word lists](https://github.com/dariusk/corpora). 
 
 *Change it up!*
-- Choose different [word lists](https://github.com/dariusk/corpora). Make sure to change the URLs in lines ``16-19`` and the list name in lines ``22-25``.
+- Choose different [word lists](https://github.com/dariusk/corpora). Make sure to change the URLs in lines ``22-24`` and the list name in lines ``27-29``.
 - Choose a different piece of text to make into a mad lib. 
 
 ## Commit your changes with Git 
