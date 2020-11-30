@@ -1,6 +1,6 @@
 # Twitter bot tutorial: Jumpstart Program 2020 edition
 
-Let's make a bot!! These instructions were written for participants in the Jumpstart Program, but they're publicly viewable for anyone to follow.
+Let's make a bot!! These instructions were written for participants in the [2020 Jumpstart Program](https://www.lib.ncsu.edu/jumpstart), but they're publicly viewable for anyone to follow.
 
 **Required libraries:** tweepy 3.5, requests, time, os, random. Written in Python 3. 
 
@@ -58,7 +58,7 @@ This script is a basic Twitter bot. It will tweet three things from a **list** i
 
 1. Go to the bot-tutorial-jumpstart folder. Click on `listbot.py` to see the code
 
-2. Take a look at the script; Robin and Tori will talk about what it's doing
+2. Take a look at the script and try to figure out what it's doing. Use the comments (preceded by #) for context.
 
 3. Clicking the green "run" triangle will run the bot. A Terminal will appear at the bottom of the screen with the output
 
@@ -74,7 +74,7 @@ This script sends out five tweets from the first five lines of an external .txt 
 
 2. Also look at `twain.txt` to see the text
 
-3. Take a look at both files; Robin and Tori will talk about what the script is doing
+3. Take a look at both files and try to figure out what it's doing. Use the comments (preceded by #) for context.
 
 4. Select `Run`
 
@@ -96,6 +96,7 @@ This script treats the poem *This Is Just To Say* (William Carlos Williams) as a
 *Change it up!*
 - Choose different [word lists](https://github.com/dariusk/corpora). Make sure to change the URLs in lines ``22-24`` and the list name in lines ``27-29``.
 - Choose a different piece of text to make into a mad lib. 
+- Advanced: this script repeats a lot of things, like fetching and processing each .json file. Create a function or two to cut down on repetitive code.
 
 ## Commit your changes with Git 
 
