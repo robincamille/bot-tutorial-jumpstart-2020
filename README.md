@@ -1,6 +1,6 @@
 # Twitter bot tutorial: Jumpstart Program 2020 edition
 
-Let's make a bot!! These instructions are written for participants in the Jumpstart Program.
+Let's make a bot!! These instructions were written for participants in the Jumpstart Program, but they're publicly viewable for anyone to follow.
 
 **Required libraries:** tweepy 3.5, requests, time, os, random. Written in Python 3. 
 
@@ -8,7 +8,11 @@ Let's make a bot!! These instructions are written for participants in the Jumpst
 
 ## Installation Specifications
 
-For this workshop, you will need to follow the Jumpstart Program install-fest instructions to set up Anaconda (which will install Python for you and the required libraries listed above), VSCode, and a Twitter developer account.
+For this workshop, you will need to:
+1. Install [Visual Studio Code](https://code.visualstudio.com/) (VS Code)
+1. Install [Anaconda](https://www.anaconda.com/products/individual) (which will install Python for you and some of the required libraries listed above)
+1. Install the [Tweepy library](http://docs.tweepy.org/en/latest/install.html)
+1. Create a new [Twitter](https://twitter.com) account, and use that account to apply for [developer status](https://developer.twitter.com/en/apply-for-access). (Don't use an existing Twitter account that has followers, as you're about to send a zillion tweets that your followers might not want to clutter their feed.) It may take a few hours (occasionally longer) for a developer account to be approved.
 
 ## Fork this repository
 Get this code onto your local machine. 
@@ -24,7 +28,7 @@ Get this code onto your local machine.
 
 ## Running Code in VS Code: test.py (optional)
 
-To test things out and get familiar with how we will be running code throughout the workshop, follow these steps:
+To test things out and get familiar with how we will be running code for this workshop, follow these steps:
 
 1. Using your finder or search box, find the folder on your desktop. Open the folder and open the file test.py in Visual Studio Code.
 2. To run the code, click the green triangle in the upper right corner of the VS Code window. 
@@ -33,10 +37,10 @@ To test things out and get familiar with how we will be running code throughout 
 [View an annotated screenshot of how to edit and run Python code in VS Code](http://robincamille.com/ncsu/vscode_screenshot_python.png)
 
 ## Get credentials from your Twitter account 
-Give your Twitter script the passwords it needs to send tweets via code instead of using the Twitter website.
+Give your Twitter script the passwords it needs to send tweets via code instead of using the Twitter website. (These steps may have changed since they were written, as Twitter is continually updating their developer account process.)
 
 1. Go to https://developer.twitter.com/en/portal/apps/new and name your new app. (If you get an  error message when you click the "Complete" button, try going to the old [sign-up form](https://developer.twitter.com/en/apps/create) instead)
- - This name isn't public; call it something like JumpstartBots 
+ - This name isn't public; call it something like JumpstartBot
  
 1. On the app's `Settings` page, scroll down to App Permissions and edit it, changing it from "Read only" to "Read & Write"
 
@@ -110,11 +114,6 @@ At some point, you'll want the changes you've committed on your machine to appea
 
 1. In the Terminal window again, type `git push origin master` and hit the return key. You should see a message of success.
 
-No message of success? Ask a workshop facilitator what's going on. 
-
----
-
-Questions about these instructions? Contact Robin at rcdavis6@ncsu.edu.
 
 ---
 
